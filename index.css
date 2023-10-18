@@ -199,10 +199,13 @@ body .about-bg {
   padding: 15px;
   background-color: #000;
   color: aliceblue;
+
 }
 .contact-wrapper .card:hover {
   cursor: pointer;
+  padding: 10px;
   transition: 1s all;
+  box-shadow: 0px 0px 0px 2px 8px #6f7979;
 }
 
 /* #0dcaf0 */
@@ -246,13 +249,61 @@ body .experience-bg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: rgb(1, 196, 255); */
-  height: 100vh;
-  width: 100%;
+  height: auto;
   overflow-x: hidden;
 
 }
+.experience-bg  .exp-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
 
+}
+.typing-demo h1{
+  text-align: center;
+  width: 57ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2rem;
+  color: aliceblue;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+.exp-hero{
+  
+  padding: 45px 0px;
+}
+.experience-bg .card{
+  margin: 65px;
+  text-align: start;
+  border: 1px solid #f9ec00;
+}
+.card-img-overlay{
+  line-height: 45px;
+  padding: 55px;
+}
+.website-link .badge{
+  padding: 10px;
+}
+.website-link .badge a{
+  text-decoration: none;
+  font-size: 15px;
+}
 /* ************************************************** */
 /* footer */
 footer {
